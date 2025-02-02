@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChutBazaar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Chut Bazaar</div>
+            <button class="nav-toggle" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#shop">Shop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Chut mien Apka swaagat hai!</h1>
+            <p>Experience the future of shopping chuts!</p>
+            <button onclick="scrollToSection('shop')">Chut Khoje</button>
+        </div>
+    </section>
+
+    <section id="shop" class="shop">
+        <h2>Shop Now</h2>
+        <div class="product-list">
+            <div class="product" data-product-id="1">
+                <img src="1.jpg" alt="Product 1">
+                <div class="product-info">
+                    <h3>Chut 1</h3>
+                    <p>2rs</p>
+                </div>
+            </div>
+            <div class="product" data-product-id="2">
+                <img src="2.jpg" alt="Product 2">
+                <div class="product-info">
+                    <h3>Chut 2</h3>
+                    <p>40rs</p>
+                </div>
+            </div>
+            <div class="product" data-product-id="3">
+                <img src="3.jpg" alt="Product 3">
+                <div class="product-info">
+                    <h3>Chut 3</h3>
+                    <p>20rs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>Namaste sabhi ko!
+
+            Aaj hum baat karenge ek aise baat par, jo humare jeevan ka ek hissa ban gayi hai, lekin hum usse zyada
+            seriously nahi lete – aur wo hai "Muth Marna!" Haan haan, sun ke mat ghabraiye, main kuch ajeeb nahi bolne
+            wala hoon. Mera matlab hai "muth maarna" ek zabardast tareeke se apne life ko jeene ki baat!
+
+            Ab aap soch rahe honge, yeh "muth marna" kya hota hai? Main aapko bata du ki muth marna ka matlab hai – apne
+            dimaag ko thoda relax karna, apne routine se bahar nikal kar kuch hasi-mazak karna, thodi masti karna. Koi
+            kaam karte waqt aise breaks lena zaroori hote hain!
+
+            Jaise hum school mein padhte the aur teacher humse kehti thi, "Beta, tumhe achha karna hai, muth maarna
+            mat!" Kya hote the hum tab! Hum sochte the ki yeh kya hawa mein udne wali baat hai? "Muth" ka kaise sambandh
+            padayi se ho sakta hai? Magar ab samajh aata hai ki apne kaam ko seriously lena aur thoda relax hona bhi
+            zaroori hota hai.
+
+            Aur ek cheez yaad rakhna! Agar aap life mein apni "muth" ko thoda aur "jordar" karoge, matlab zindagi mein
+            thodi masti daaloge, thodi hasi-mazak karoge, toh har din kaam karne ki taqat milegi. Samajhdari se "muth
+            maarna" ek creative soch hai, jisse zindagi thodi light ho jaati hai!
+
+            Ab, ek baat suno! Aaj kal hum sabhi har waqt busy rehte hain. Office, school, ghar, har jagah humari "muth
+            maarne" ki power kaafi kam hoti ja rahi hai. Par jab hum thoda chill karte hain, apne friends ke saath
+            ghoomte hain, ya apni favorite comedy movie dekhte hain, tabhi hum apni "muth" ko asli maza de paate hain!
+        </p>
+    </section>
+
+
+    <footer>
+        <p>© 2025 Insane Chut ka Market. All rights reserved.</p>
+    </footer>
+
+    <div id="product-details" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProductDetails()">×</span>
+            <h2 id="product-title">Chut (Pinkish)</h2>
+            <img id="product-image" src="" alt="Product Image">
+            <p id="product-description">Barhiya pink mayukh ki chut</p>
+            <p id="product-price">Price: 2rs</p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
